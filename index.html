@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tandin Zangmo | Victorian e-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="logo">Tandin Zangmo</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Greetings, I am <span class="highlight">Tandin Zangmo</span></h1>
+      <p class="tagline">B.Ed ICT Student | Aspiring ICT Teacher</p>
+      <p class="intro">
+        I am an aspiring ICT teacher with a passion for designing creative learning experiences. 
+        I love blending technology with education, from making physical teaching aids 
+        to developing digital solutions. Every project I take on is an opportunity to grow my skills, 
+        inspire learners, and create a lasting impact in classrooms.
+      </p>
+    </div>
+    <img src="photo_2025-09-19_16-10-16.jpg" alt="Profile Photo" class="profile">
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+      I am currently pursuing a Bachelor of Education in ICT at Samtse College of Education. 
+      My goal is to become a confident and innovative ICT teacher who integrates technology 
+      into classrooms meaningfully. I am deeply interested in web development, database systems, 
+      and creating educational videos. I also enjoy hands-on projects, where I can combine theory with practice.
+    </p>
+  </section>
+
+  <!-- ===== Education ===== -->
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li><b>Samtse College of Education</b> – B.Ed ICT (In Progress)</li>
+      <li><b>Kelki Higher Secondary School</b> – Class XII, Science (2022)</li>
+      <li><b>Dechenchholing Higher Secondary School</b> – Class X (2019)</li>
+    </ul>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>HTML, CSS (Responsive Design)</li>
+          <li>JavaScript Basics</li>
+          <li>MySQL Database Management</li>
+          <li>Algorithm & Data Structures</li>
+          <li>Educational Video Editing</li>
+          <li>Microsoft Office Suite</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Team Collaboration</li>
+          <li>Communication</li>
+          <li>Time Management</li>
+          <li>Creativity & Innovation</li>
+          <li>Emotional Intelligence</li>
+          <li>Adaptability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article>
+        <h3>Physics Project – Two-Way Switch</h3>
+        <p>A hands-on electrical circuit project demonstrating two-way switching mechanism.</p>
+      </article>
+      <article>
+        <h3>Physics Project – Rain Detector House</h3>
+        <p>A creative model designed to detect rainfall and protect a miniature house.</p>
+      </article>
+      <article>
+        <h3>VDT – Educational Video Creation</h3>
+        <p>Created digital educational videos using ICT tools, applying design principles learned in class.</p>
+      </article>
+      <article>
+        <h3>Database Project – Hostel Management</h3>
+        <p>Developed a database in MySQL to manage hostel records including students, rooms, and allocations.</p>
+      </article>
+      <article>
+        <h3>Web Project – LotusMind (Ongoing)</h3>
+        <p>Currently designing a website on mental health awareness called <b>LotusMind</b> using HTML, CSS, and JavaScript.</p>
+      </article>
+      <article>
+        <h3>Blended Learning Project – ICT401</h3>
+        <p>A blended learning approach integrating classroom teaching with digital learning materials to enhance ICT education.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:08230209.sce@rub.edu.bt">:08230209.sce@rub.edu.bt</a></p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© <span id="year"></span> Tandin Zangmo | Victorian e-Portfolio</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Background color rotation (Victorian era inspired)
+    const victorianGradients = [
+      "linear-gradient(135deg, #ede2d0, #d4af37)",
+      "linear-gradient(135deg, #5a2a2a, #ede2d0)",
+      "linear-gradient(135deg, #355e3b, #fdfcf5)",
+      "linear-gradient(135deg, #2f4f4f, #d4af37)"
+    ];
+    let gIndex = 0;
+    setInterval(() => {
+      document.body.style.background = victorianGradients[gIndex];
+      gIndex = (gIndex + 1) % victorianGradients.length;
+    }, 7000);
+  </script>
+</body>
+</html>
+
